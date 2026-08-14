@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GanaSmart | Ofertas y recomendaciones</title>
+
+  <meta
+    name="description"
+    content="Descubre productos, ofertas y recomendaciones."
+  >
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+  <a href="#" class="logo">
+    Gana<span>Smart</span>
+  </a>
+
+  <nav>
+    <a href="#ofertas">Ofertas</a>
+    <a href="#como-funciona">Cómo funciona</a>
+    <a href="#administrar">Administrar</a>
+  </nav>
+
+</header>
+
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div>
+
+      <p class="eyebrow">
+        OFERTAS • RECOMENDACIONES • AFILIADOS
+      </p>
+
+      <h1>
+        Encuentra productos que
+        <span>valen la pena.</span>
+      </h1>
+
+      <p class="description">
+        Descubre productos recomendados y encuentra ofertas
+        interesantes en un solo lugar.
+      </p>
+
+      <a href="#ofertas" class="button">
+        Ver ofertas
+      </a>
+
+    </div>
+
+
+    <div class="hero-card">
+
+      <h2>GanaSmart</h2>
+
+      <p>
+        Publica recomendaciones y utiliza enlaces de afiliado
+        autorizados para monetizar tu contenido.
+      </p>
+
+      <div class="stats">
+
+        <div>
+          <strong id="productCount">0</strong>
+          <small>Productos</small>
+        </div>
+
+        <div>
+          <strong id="clickCount">0</strong>
+          <small>Clics</small>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<main>
+
+
+<section id="ofertas" class="section">
+
+  <div class="section-header">
+
+    <div>
+
+      <p class="eyebrow">
+        CATÁLOGO
+      </p>
+
+      <h2>
+        Ofertas recomendadas
+      </h2>
+
+    </div>
+
+
+    <input
+      type="search"
+      id="search"
+      placeholder="Buscar producto..."
+    >
+
+  </div>
+
+
+  <div id="categories" class="categories"></div>
+
+
+  <div id="products" class="products"></div>
+
+</section>
+
+
+
+<section id="como-funciona" class="section white">
+
+  <p class="eyebrow">
+    CÓMO FUNCIONA
+  </p>
+
+  <h2>
+    Tres pasos para comenzar
+  </h2>
+
+
+  <div class="steps">
+
+    <article>
+
+      <div class="number">
+        1
+      </div>
+
+      <h3>
+        Publica
+      </h3>
+
+      <p>
+        Agrega productos y servicios que quieras recomendar.
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <div class="number">
+        2
+      </div>
+
+      <h3>
+        Consigue visitantes
+      </h3>
+
+      <p>
+        Comparte contenido útil para atraer personas interesadas.
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <div class="number">
+        3
+      </div>
+
+      <h3>
+        Monetiza
+      </h3>
+
+      <p>
+        Utiliza enlaces de afiliado autorizados y recibe
+        las comisiones correspondientes.
+      </p>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+
+<section id="administrar" class="section">
+
+  <p class="eyebrow">
+    ADMINISTRACIÓN
+  </p>
+
+  <h2>
+    Agregar producto
+  </h2>
+
+  <p class="notice">
+    Esta versión es una demostración. Los productos se guardan
+    localmente en el navegador.
+  </p>
+
+
+  <form id="productForm">
+
+    <input
+      type="text"
+      id="name"
+      placeholder="Nombre del producto"
+      required
+    >
+
+
+    <input
+      type="text"
+      id="price"
+      placeholder="Precio, ejemplo: $499 MXN"
+    >
+
+
+    <select id="category">
+
+      <option value="Tecnología">
+        Tecnología
+      </option>
+
+      <option value="Hogar">
+        Hogar
+      </option>
+
+      <option value="Accesorios">
+        Accesorios
+      </option>
+
+      <option value="Otros">
+        Otros
+      </option>
+
+    </select>
+
+
+    <input
+      type="text"
+      id="emoji"
+      placeholder="Emoji, ejemplo: 🎧"
+      maxlength="2"
+    >
+
+
+    <input
+      type="url"
+      id="affiliateUrl"
+      placeholder="Enlace del producto"
+      required
+    >
+
+
+    <button
+      type="submit"
+      class="button"
+    >
+      Agregar producto
+    </button>
+
+  </form>
+
+</section>
+
+</main>
+
+
+
+<footer>
+
+  <strong>
+    GanaSmart
+  </strong>
+
+  <p>
+    © 2026 GanaSmart
+  </p>
+
+  <small>
+    Los ingresos no están garantizados. Las comisiones dependen
+    de cada programa de afiliados y de sus condiciones.
+  </small>
+
+</footer>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
